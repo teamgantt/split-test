@@ -1,6 +1,6 @@
 {
   "name": "teamgantt-split-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A library to randomly put a user in view the original version or view an exerimental version of a test.",
   "main": "src/index.js",
   "scripts": {
