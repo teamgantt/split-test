@@ -156,7 +156,7 @@ tgSplitTest.saveVariant = function (experimentName, variant) {
   var cookieDetails = experimentName + '=' + variant+';'
     + 'expires='+expires+';'
     + 'path=/;'
-    + 'domain='+this.getDomain()+';';
+    + 'domain='+this.getDomain()+';'
     + 'secure=true';
 
   document.cookie = cookieDetails;
