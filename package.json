@@ -1,7 +1,7 @@
 {
   "name": "teamgantt-split-test",
-  "version": "0.0.3",
-  "description": "A library to randomly put a user in view the original version or view an exerimental version of a test.",
+  "version": "0.1.0",
+  "description": "A library to randomly put a user in view the original version (Control) or view an experimental version (Variation) of a test.",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
