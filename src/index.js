@@ -108,7 +108,7 @@ tgSplitTest.trackToSegment = function(experimentName, isInExperiment) {
   window.analytics.track('Experiment Viewed', {
     experimentName: experimentName,
     variationId: !isInExperiment ? 1 : 2,
-    variationName: !isInExperiment ? 'Var A' : 'Var B',
+    variationName: !isInExperiment ? 'Control' : 'Variation',
   });
 }
 
