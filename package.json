@@ -2,10 +2,12 @@
   "name": "teamgantt-split-test",
   "version": "0.1.0",
   "description": "A library to randomly put a user in view the original version (Control) or view an experimental version (Variation) of a test.",
-  "main": "src/index.js",
+  "main": "src/index.cjs",
+  "type": "module",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.cjs --mode production",
+    "test": "node ./test/index.test.mjs",
+    "prettier": "prettier --config .prettierrc.cjs --write \"{src,test}/**/*.{cjs,mjs}\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/teamgantt/split-test#readme",
   "devDependencies": {
+    "prettier": "2.8.3",
     "webpack": "^5.54.0",
     "webpack-cli": "^5.0.1"
   }
