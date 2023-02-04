@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "webpack --config webpack.config.cjs --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --config .prettierrc.cjs --write \"src/**/*.{cjs,mjs}\""
+    "test": "node ./test/index.test.mjs",
+    "prettier": "prettier --config .prettierrc.cjs --write \"{src,test}/**/*.{cjs,mjs}\""
   },
   "repository": {
     "type": "git",
