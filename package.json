@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "webpack --config webpack.config.cjs --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --config .prettierrc.cjs --write \"src/**/*.{cjs,mjs}\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/teamgantt/split-test#readme",
   "devDependencies": {
+    "prettier": "2.8.3",
     "webpack": "^5.54.0",
     "webpack-cli": "^5.0.1"
   }
