@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Examples</title>
+<script language="javascript" type="text/javascript" src="../public/index.js"></script>
+<script language="javascript" type="text/javascript" src="../examples/segment.js"></script>
+<style type="text/css">
+  .green {
+    background-color: lightgreen;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="example" class="green">Hi mom!</div>
+
+<script language="javascript" type="text/javascript">
+  const isInSplitTest = window.tgSplitTest.isInExperiment('blue-vs-green');
+  if (!isInSplitTest) {
+    window.console.log('redirecting!');
+    window.location = '../examples/redirect-blue.html';
+  }
+</script>
+
+Rest of page...
+
+</body>
+</html>
